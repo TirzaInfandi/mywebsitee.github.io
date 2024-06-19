@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes slide-in{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        header {
+            background-color: #bd1387;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: slide-in 0.6s ease-out;
+        }
+        .header-img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 5px solid #fff; 
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        /* Main section styles */
+        .main {
+            background-color: #c94aec;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            color: #444;
+            font-size: 1.1em;
+        }
+        
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .portfolio-item {
+            background-color: #e860df;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .portfolio-item h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .portfolio-item p {
+            margin-bottom: 0;
+            color: #555;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="header-img" src="saya.jpeg" alt="Foto Profil Anda">
+        <h1>Portofolio Tirza</h1>
+    </header>
+    <div class="container">
+        <section class="main" id="pengenalan">
+            <h2>Pengenalan</h2>
+            <p>Selamat datang di portofolio saya! Saya adalah Tirza Infandi seorang mahasiswa Universitas OttowGeissler.</p>
+        </section>
+        <section class="main" id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang mahasiswa Univeritas OttowGeissler Papua.
+                angkatan tahun 2022 jurusan Sistem Informasi.</p>
+        </section>
+        <section class="main" id="kontak">
+            <h2>Kontak</h2>
+            <p>Jika Anda memiliki saran atau pertanyaan, jangan ragu untuk menghubungi saya melalui cara di bawah ini:</p>
+            <ul>
+                <li>Email: tirzainfandi859@gmail.com</li>
+                <li>Telepon: +6285217715517</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Portofolio Saya</p>
+    </footer>
+</body>
+</html>
